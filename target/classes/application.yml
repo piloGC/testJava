@@ -1,0 +1,19 @@
+regex:
+  email: "[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}"
+  pass: "^[a-z0-9]{7}"
+
+server:
+  port: 8100
+
+spring:
+  application:
+    name: test
+  datasource:
+    url: jdbc:mysql://localhost:33060/usuarios
+    username: root
+    password: mysql
+    driverClassName: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+      dialect: org.hibernate.dialect.MySQL8Dialect
