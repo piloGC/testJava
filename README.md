@@ -26,7 +26,7 @@ Desarrollo de evaluacion Java.
 
 ## Descripción de los Directorios y Archivos
 
-- **src/main/java/com/test/Test/controller**: Este directorio contiene los controladores que maneja la solicitud HTTP solicitada, ademas de un método test() retornando un "HOLA MUNDO" visible al navegar a  `http://localhost:8100/users`
+- **src/main/java/com/test/Test/controller**: Este directorio contiene los controladores que maneja la solicitud HTTP solicitada, ademas de un método test() retornando un "HOLA MUNDO" visible al navegar a  `http://localhost:8080/users`
 
 - **src/main/java/com/test/Test/entity**: En este directorio se encuentran las entidades de JPA que representan las tablas de la base de datos.
 
