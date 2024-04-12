@@ -9,7 +9,7 @@ import java.util.List;
 
 @Data
 @Entity
-@Table(name="user")
+@Table(name="users")
 public class User {
 
     @Id
@@ -22,7 +22,7 @@ public class User {
     @Column(name="email", unique = true)
     private String email;
 
-    @Column(name="password")
+    @Column(name="pass")
     private String password;
 
     @OneToMany(cascade = CascadeType.ALL)

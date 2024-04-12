@@ -39,10 +39,6 @@ public class UserResponse {
     private User user;
 
     public UserResponse() {
-        this.created = new Date();
-        this.uuid = UUID.randomUUID().toString();
-        this.token = this.uuid.toString();
-        this.isActive = true;
     }
 
     public UserResponse(Integer id, String uuid, Date created, Date modified, Date lastLogin, String token, boolean isActive, User user) {

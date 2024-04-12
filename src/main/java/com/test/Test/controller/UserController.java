@@ -61,7 +61,7 @@ public class UserController {
 
     @GetMapping("")
     public String test(){
-        return "holaa mundo";
+        return "HOLA MUNDO";
     }
 
 

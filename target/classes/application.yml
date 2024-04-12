@@ -3,17 +3,16 @@ regex:
   pass: "^[a-z0-9]{7}"
 
 server:
-  port: 8100
+  port: 8080
 
 spring:
   application:
     name: test
   datasource:
-    url: jdbc:mysql://localhost:33060/usuarios
-    username: root
-    password: mysql
-    driverClassName: com.mysql.cj.jdbc.Driver
-  jpa:
-    hibernate:
-      ddl-auto: update
-      dialect: org.hibernate.dialect.MySQL8Dialect
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true

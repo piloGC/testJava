@@ -1,6 +1,5 @@
 package com.test.Test.util;
 
-import com.test.Test.config.ConfigYml;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

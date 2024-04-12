@@ -7,6 +7,7 @@ import com.test.Test.repository.IUserResponseRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.Date;
+import java.util.UUID;
 
 @Service
 public class UserService {
@@ -25,6 +26,10 @@ public class UserService {
 
     //funcion para guardar el response correspondiente a un nuevo usuario creado
     public void guardarUserConResponse(User user, UserResponse userResponse){
+
+        //carga datos de user response
+        this.cargarDatosResponse(userResponse);
+
         //guarda response correspondiente del usuario
         this.userResponseRepository.save(userResponse);
 
@@ -37,6 +42,16 @@ public class UserService {
         user.setUserResponse(userResponse);
         userResponse.setUser(user);
         this.userRepository.save(user);
+    }
+
+    private void cargarDatosResponse(UserResponse userResponse){
+
+        if(userResponse != null) {
+            userResponse.setCreated(new Date());
+            userResponse.setUuid(UUID.randomUUID().toString());
+            userResponse.setToken(userResponse.getUuid());
+            userResponse.setActive(true);
+        }
     }
 
 
