@@ -17,7 +17,9 @@ Desarrollo de evaluacion Java.
    
 2. Abrir y ejecutar proyecto en IDE de preferencia
 
-3. Abrir el navegador y navegar a `http://localhost:8100/users` para ver la aplicación en funcionamiento.
+3. Abrir el navegador y navegar a `http://localhost:8080/users` para ver la aplicación en funcionamiento.
+
+4. Abrir el navegador y navegar a `http://localhost:8080/h2-console` para ver la base de datos en funcionamiento.
 
 
 ## Estructura del Proyecto
